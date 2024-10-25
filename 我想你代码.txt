@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://sunneversets.gitee.io/love/missyou.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="with=device-width,initial-scale=1,user-scalable=no">
+    <title>我在想你</title>
+    <link rel="stylesheet" href="./我在想你_files/missyou.css">
+   
+<style class="mpa-style-fix ImageGatherer">.FotorFrame{position:fixed!important}</style><style class="mpa-style-fix SideFunctionPanel">.weui-desktop-online-faq__wrp{top:304px!important;bottom:unset!important}.weui-desktop-online-faq__wrp .weui-desktop-online-faq__switch{width:38px!important}</style><script src="./我在想你_files/monitors.3.6.36.cn.js.下载" async="" crossorigin="anonymous"></script><script src="./我在想你_files/sentry.3.6.36.cn.js.下载" async="" crossorigin="anonymous"></script></head>
+<body mpa-version="9.0.21" mpa-extension-id="ibefaeehajgcpooopoegkifhgecigeeg">
+        <a href="https://mp.weixin.qq.com/s/oxLqXBcLCT8ij67DjkW2kw" class="hide_buttom"
+  style="position: fixed;top: 10%;right: 10px;width: 35px;height: 35px;z-index: 999;background: #696969;border-radius: 50%;padding: 1.0px;text-align: center;color: #ddd;text-decoration: none;   clear: both; line-height: 35px; 	margin:auto;   font-size: 13px;">制作</a>
+  <a href="https://shop1619956412.v.weidian.com/?userid=1619956412&spider_token=2720" class="hide_buttom"
+  style="position: fixed;top: 4%;right: 10px;width: 35px;height: 35px;z-index: 998;background: #696969;border-radius: 50%;padding: 1.0px;text-align: center;color: #ddd;text-decoration: none;   clear: both; line-height: 35px; 	margin:auto;   font-size: 13px;">更多</a>
+          <a href="https://pan.quark.cn/s/3344d23e48a8" class="hide_buttom"
+  style="position: fixed;top: 16%;right: 10px;width: 35px;height: 35px;z-index: 997;background: #696969;border-radius: 50%;padding: 1.0px;text-align: center;color: #ddd;text-decoration: none;   clear: both; line-height: 35px; 	margin:auto;   font-size: 13px;">源码</a>
+  <a href="https://shop1619956412.v.weidian.com/?userid=1619956412&spider_token=2720" class="hide_buttom"
+  style="position: fixed;top: 22%;right: 10px;width: 35px;height: 35px;z-index: 996;background: #696969;border-radius: 50%;padding: 1.0px;text-align: center;color: #ddd;text-decoration: none;   clear: both; line-height: 35px; 	margin:auto;   font-size: 13px;">红包</a>
+    <div class="text">我在想你</div>
+    <div class="loader">
+        <span style="--i:1;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:3;"></span>
+        <span style="--i:4;"></span>
+        <span style="--i:5;"></span>
+        <span style="--i:6;"></span>
+        <span style="--i:7;"></span>
+        <span style="--i:8;"></span>
+        <span style="--i:9;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+    </div>
+
+</div></section></template></div><div id="__FEISHU_CLIPPER__"></div></body></html>

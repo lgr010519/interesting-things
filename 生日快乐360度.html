@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>生日快乐</title>
+  <style>
+    body {
+      background: #000;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    #ui .love {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -225px 0 0 -225px;
+    }
+
+    #ui .love:last-child .love_word {
+      color: #fff;
+      font-size: 1.5rem;
+      text-shadow: 0 0 10px #ea80b0;
+    }
+
+    #ui .love_word {
+      color: #ea80b0;
+      font-size: 1.4rem;
+      transform: translateY(-100%) rotateZ(-30deg);
+      font-family: 'Dosis', sans-serif;
+      text-shadow: 0 0 10px #fff;
+      letter-spacing: 2px;
+    }
+
+    #ui .love_horizontal {
+      animation: horizontal 10000ms infinite alternate ease-in-out;
+    }
+
+    #ui .love_vertical {
+      animation: vertical 20000ms infinite linear;
+    }
+
+    #ui .love:nth-child(100) .love_horizontal {
+      animation-delay: -30000ms;
+    }
+
+    #ui .love:nth-child(100) .love_vertical {
+      animation-delay: -30000ms;
+    }
+
+    @keyframes horizontal {
+      from {
+        transform: translateX(0px);
+      }
+
+      to {
+        transform: translateX(450px);
+      }
+    }
+
+    @keyframes vertical {
+      0% {
+        transform: translateY(180px);
+      }
+
+      10% {
+        transform: translateY(45px);
+      }
+
+      15% {
+        transform: translateY(4.5px);
+      }
+
+      18% {
+        transform: translateY(0px);
+      }
+
+      20% {
+        transform: translateY(4.5px);
+      }
+
+      22% {
+        transform: translateY(34.61538px);
+      }
+
+      24% {
+        transform: translateY(64.28571px);
+      }
+
+      25% {
+        transform: translateY(112.5px);
+      }
+
+      26% {
+        transform: translateY(64.28571px);
+      }
+
+      28% {
+        transform: translateY(34.61538px);
+      }
+
+      30% {
+        transform: translateY(4.5px);
+      }
+
+      32% {
+        transform: translateY(0px);
+      }
+
+      35% {
+        transform: translateY(4.5px);
+      }
+
+      40% {
+        transform: translateY(45px);
+      }
+
+      50% {
+        transform: translateY(180px);
+      }
+
+      71% {
+        transform: translateY(428.57143px);
+      }
+
+      72.5% {
+        transform: translateY(441.17647px);
+      }
+
+      75% {
+        transform: translateY(450px);
+      }
+
+      77.5% {
+        transform: translateY(441.17647px);
+      }
+
+      79% {
+        transform: translateY(428.57143px);
+      }
+
+      100% {
+        transform: translateY(180px);
+      }
+    }
+  </style>
+  <style class="mpa-style-fix ImageGatherer">
+    .FotorFrame {
+      position: fixed !important
+    }
+  </style>
+  <style class="mpa-style-fix SideFunctionPanel">
+    .weui-desktop-online-faq__wrp {
+      top: 304px !important;
+      bottom: unset !important
+    }
+
+    .weui-desktop-online-faq__wrp .weui-desktop-online-faq__switch {
+      width: 38px !important
+    }
+  </style>
+</head>
+
+<body mpa-version="9.0.21" mpa-extension-id="ibefaeehajgcpooopoegkifhgecigeeg">
+  <div id="ui">
+    <div class="love" v-for="i in 99" :key="i">
+      <div class="love_horizontal" :style="{'animation-delay': -(300 * i) + 'ms'}">
+        <div class="love_vertical" :style="{'animation-delay': -(300 * i) + 'ms'}">
+          <div class="love_word">生 日 快 乐</div>
+        </div>
+      </div>
+    </div>
+    <div class="love">
+      <div class="love_horizontal">
+        <div class="love_vertical">
+          <div class="love_word">祝亲爱的宝贝</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.7.14/vue.js"></script>
+  <script>
+    new Vue({
+      el: '#ui'
+    })
+  </script>
+</body>
+
+</html>
