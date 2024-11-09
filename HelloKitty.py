@@ -1,20 +1,21 @@
 import math
 import turtle as t
- 
+
+
 def myarc(t1, r, angle):
-    arc_length = 2 * math.pi * r * angle / 360 
-    n = int(arc_length / 3) + 1  
-    step_length = arc_length / n  
-    step_angle = angle / n  
+    arc_length = 2 * math.pi * r * angle / 360
+    n = int(arc_length / 3) + 1
+    step_length = arc_length / n
+    step_angle = angle / n
     polyline(t1, n, step_length, step_angle)
- 
- 
+
+
 def polyline(t1, n, length, angle):
     for index in range(n):
         t1.fd(length)
         t1.lt(angle)
- 
- 
+
+
 def flower(n):
     for x in range(n):
         t.forward(0.5)
@@ -24,12 +25,13 @@ def flower(n):
             t.left(2.3)
         else:
             t.left(1)
- 
+
+
 t.screensize(500, 500, "white")
 t.pensize(8)
 t.pencolor("black")
 t.speed(10)
- 
+
 wn = t.Screen()
 wn.tracer(-8)
 
@@ -45,7 +47,6 @@ for x in range(580):
         t.left(0.1)
     else:
         t.left(0.5)
- 
 
 t.setheading(70)
 for y in range(150):
@@ -69,7 +70,7 @@ for y2 in range(157):
         t.left(8)
     else:
         t.left(0.5)
- 
+
 t.pensize(5)
 
 t.penup()
@@ -122,7 +123,7 @@ for i in range(2):
         t.forward(step)
         t.left(3)
 t.end_fill()
- 
+
 t.penup()
 t.goto(20, 180)
 t.pendown()
@@ -156,7 +157,7 @@ t.pensize(6)
 for y in range(40):
     t.forward(1)
     t.left(0.3)
- 
+
 t.penup()
 t.goto(-150, 85)
 t.pendown()
@@ -164,7 +165,7 @@ t.setheading(160)
 for y in range(50):
     t.forward(1)
     t.left(0.3)
- 
+
 t.penup()
 t.goto(-150, 45)
 t.pendown()
@@ -172,7 +173,7 @@ t.setheading(180)
 for y in range(55):
     t.forward(1)
     t.left(0.3)
- 
+
 t.penup()
 t.goto(110, 10)
 t.setheading(340)
@@ -194,7 +195,6 @@ t.pendown()
 for y in range(50):
     t.forward(1)
     t.right(0.3)
- 
 
 t.pensize(8)
 t.penup()
@@ -326,17 +326,16 @@ for i in range(2):
 t.end_fill()
 
 t.penup()
-t.goto(100,-120)
+t.goto(100, -120)
 t.pendown()
-s = "凯蒂猫^-^"
-t.write(s,font = ("Arial",20,"normal"))
+# s = "凯蒂猫^-^"
+# t.write(s, font=("Arial", 20, "normal"))
 
 t.penup()
-t.goto(100,-140)
+t.goto(100, -140)
 t.pendown()
 t.begin_fill()
-t.write('HelloKitty',font=("Arial",15,"normal"))
- 
+# t.write('HelloKitty', font=("Arial", 15, "normal"))
+
 t.hideturtle()
 t.mainloop()
-

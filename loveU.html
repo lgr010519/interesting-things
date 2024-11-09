@@ -1,417 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
-  <meta charset="UTF-8">
-  <title>爱心</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    html,
-    body {
-      height: 100%;
-      padding: 0;
-      margin: 0;
-      background: #000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
- 
-    }
- 
-    .box {
-      width: 100%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      display: flex;
-      flex-direction: column;
-    }
- 
-    canvas {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
- 
-    #pinkboard {
-      position: relative;
-      margin: auto;
-      height: 500px;
-      width: 500px;
-      animation: animate 1.3s infinite;
-    }
- 
-    #pinkboard:before,
-    #pinkboard:after {
-      content: '';
-      position: absolute;
-      background: #FF5CA4;
-      width: 100px;
-      height: 160px;
-      border-top-left-radius: 50px;
-      border-top-right-radius: 50px;
-    }
- 
-    #pinkboard:before {
-      left: 100px;
-      transform: rotate(-45deg);
-      transform-origin: 0 100%;
-      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-        0 10px 10px rgba(0, 0, 0, 0.22);
-    }
- 
-    #pinkboard:after {
-      left: 0;
-      transform: rotate(45deg);
-      transform-origin: 100% 100%;
-    }
- 
-    @keyframes animate {
-      0% {
-        transform: scale(1);
-      }
- 
-      30% {
-        transform: scale(.8);
-      }
- 
-      60% {
-        transform: scale(1.2);
-      }
- 
-      100% {
-        transform: scale(1);
-      }
-    }
- 
-    * {
-      font-family: "Open Sans", sans-serif;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
- 
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: #050505;
-    }
- 
-    .animation-container {
-      width: 350px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 40px;
-      font-weight: bold;
-      color: #664390;
-      animation: squeez 5s ease-in infinite;
-    }
- 
-    .bar {
-      width: 8px;
-      height: 100px;
-      border-radius: 4px;
-      background-color: white;
-    }
- 
-    .love-heart {
-      color: red;
-    }
- 
-    .letter-love {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
- 
-    .letter-love .love-text {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      animation: love-text 5s ease-in infinite;
-    }
- 
-    .letter-love .love-heart {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 60px;
-      animation: love-heart 5s ease-in infinite;
-    }
- 
-    .letter-you {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
- 
-    .letter-you .you-text {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      animation: you-text 5s ease-in infinite;
-    }
- 
-    .letter-you .you-text-small {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      animation: you-text-small 5s ease-in infinite;
-    }
- 
-    .letter-i {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      animation: letter-i 5s ease-in infinite;
-    }
- 
-    .splash {
-      width: 50px;
-      height: 50px;
-    }
- 
-    .splash .circle-out {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      background-color: #664390;
-      border-radius: 50%;
-    }
- 
-    .splash .circle-out .circle-in {
-      width: calc(100% - 10px);
-      height: calc(100% - 10px);
-      background-color: #FFCA74;
-      border-radius: 50%;
-    }
- 
-    @keyframes squeez {
-      0% {
-        width: 350px;
-        letter-spacing: 5px;
-      }
- 
-      25% {
-        width: 230px;
-        letter-spacing: -5px;
-      }
- 
-      26% {
-        letter-spacing: 5px;
-      }
- 
-      50% {
-        width: 200px;
-      }
- 
-      75% {
-        width: 170px;
-        letter-spacing: -5px;
-      }
- 
-      100% {
-        width: 100px;
-        letter-spacing: 5px;
-      }
-    }
- 
-    @keyframes love-text {
-      0% {
-        width: 140px;
-        opacity: 1;
-        transform: scale(1, 1);
-      }
- 
-      25% {
-        width: 100px;
-        opacity: 1;
-        transform: scale(1, 1);
-      }
- 
-      27%,
-      100% {
-        width: 0;
-        opacity: 0;
-        transform: scale(0, 0);
-      }
-    }
- 
-    @keyframes love-heart {
- 
-      0%,
-      25% {
-        width: 0;
-        opacity: 0;
-        transform: scale(0, 0);
-        font-size: 60px;
-      }
- 
-      27% {
-        transform: scale(1.5, 1.5);
-      }
- 
-      30% {
-        width: 70px;
-        opacity: 1;
-        transform: scale(1, 1);
-      }
- 
-      50% {
-        transform: scale(1, 1);
-        font-size: 60px;
-      }
- 
-      53% {
-        transform: scale(1.5, 1.5);
-        font-size: 80px;
-      }
- 
-      55% {
-        width: 70px;
-        opacity: 1;
-        transform: scale(1, 1);
-      }
- 
-      75% {
-        width: 50px;
-        transform: scale(1, 1);
-      }
- 
-      77% {
-        transform: scale(1.5, 1.5);
-      }
- 
-      80% {
-        transform: scale(1, 1);
-        font-size: 70px;
-      }
- 
-      100% {
-        width: 100px;
-        opacity: 1;
-        transform: scale(1, 1);
-        font-size: 80px;
-      }
-    }
- 
-    @keyframes you-text {
-      0% {
-        width: 90px;
-        opacity: 1;
-        transform: scale(1, 1);
-      }
- 
-      25% {
-        width: 80px;
-        opacity: 1;
-      }
- 
-      26% {
-        width: 90px;
-        opacity: 1;
-      }
- 
-      50% {
-        width: 80px;
-        opacity: 1;
-        transform: scale(1, 1);
-      }
- 
-      53%,
-      100% {
-        width: 0;
-        opacity: 0;
-        transform: scale(0, 0);
-      }
-    }
- 
-    @keyframes you-text-small {
- 
-      0%,
-      50% {
-        width: 0;
-        opacity: 0;
-        transform: scale(0, 0);
-      }
- 
-      53% {
-        width: 80px;
-        opacity: 1;
-      }
- 
-      55% {
-        transform: scale(1, 1);
-      }
- 
-      75% {
-        width: 50px;
-        opacity: 1;
-      }
- 
-      76%,
-      100% {
-        width: 0;
-        opacity: 0;
-      }
-    }
- 
-    @keyframes letter-i {
- 
-      0%,
-      75% {
-        opacity: 1;
-        display: flex;
-        transform: scale(1, 1);
-      }
- 
-      77%,
-      100% {
-        width: 0;
-        opacity: 0;
-        transform: scale(1, 1);
-      }
-    }
-  </style>
- 
+    <meta charset="UTF-8">
+    <title>爱心</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html,
+        body {
+          height: 100%;
+          padding: 0;
+          margin: 0;
+          background: #000;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+        }
+
+        .box {
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: flex;
+          flex-direction: column;
+        }
+
+        canvas {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+        }
+
+        #pinkboard {
+          position: relative;
+          margin: auto;
+          height: 500px;
+          width: 500px;
+          animation: animate 1.3s infinite;
+        }
+
+        #pinkboard:before,
+        #pinkboard:after {
+          content: '';
+          position: absolute;
+          background: #FF5CA4;
+          width: 100px;
+          height: 160px;
+          border-top-left-radius: 50px;
+          border-top-right-radius: 50px;
+        }
+
+        #pinkboard:before {
+          left: 100px;
+          transform: rotate(-45deg);
+          transform-origin: 0 100%;
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+
+        #pinkboard:after {
+          left: 0;
+          transform: rotate(45deg);
+          transform-origin: 100% 100%;
+        }
+
+        @keyframes animate {
+          0% {
+            transform: scale(1);
+          }
+
+          30% {
+            transform: scale(.8);
+          }
+
+          60% {
+            transform: scale(1.2);
+          }
+
+          100% {
+            transform: scale(1);
+          }
+        }
+
+        * {
+          font-family: "Open Sans", sans-serif;
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        .container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          background: #050505;
+        }
+
+        .animation-container {
+          width: 350px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          font-weight: bold;
+          color: #664390;
+          animation: squeez 5s ease-in infinite;
+        }
+
+        .bar {
+          width: 8px;
+          height: 100px;
+          border-radius: 4px;
+          background-color: white;
+        }
+
+        .love-heart {
+          color: red;
+        }
+
+        .letter-love {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .letter-love .love-text {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          animation: love-text 5s ease-in infinite;
+        }
+
+        .letter-love .love-heart {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 60px;
+          animation: love-heart 5s ease-in infinite;
+        }
+
+        .letter-you {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .letter-you .you-text {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          animation: you-text 5s ease-in infinite;
+        }
+
+        .letter-you .you-text-small {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          animation: you-text-small 5s ease-in infinite;
+        }
+
+        .letter-i {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          animation: letter-i 5s ease-in infinite;
+        }
+
+        .splash {
+          width: 50px;
+          height: 50px;
+        }
+
+        .splash .circle-out {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          background-color: #664390;
+          border-radius: 50%;
+        }
+
+        .splash .circle-out .circle-in {
+          width: calc(100% - 10px);
+          height: calc(100% - 10px);
+          background-color: #FFCA74;
+          border-radius: 50%;
+        }
+
+        @keyframes squeez {
+          0% {
+            width: 350px;
+            letter-spacing: 5px;
+          }
+
+          25% {
+            width: 230px;
+            letter-spacing: -5px;
+          }
+
+          26% {
+            letter-spacing: 5px;
+          }
+
+          50% {
+            width: 200px;
+          }
+
+          75% {
+            width: 170px;
+            letter-spacing: -5px;
+          }
+
+          100% {
+            width: 100px;
+            letter-spacing: 5px;
+          }
+        }
+
+        @keyframes love-text {
+          0% {
+            width: 140px;
+            opacity: 1;
+            transform: scale(1, 1);
+          }
+
+          25% {
+            width: 100px;
+            opacity: 1;
+            transform: scale(1, 1);
+          }
+
+          27%,
+          100% {
+            width: 0;
+            opacity: 0;
+            transform: scale(0, 0);
+          }
+        }
+
+        @keyframes love-heart {
+
+          0%,
+          25% {
+            width: 0;
+            opacity: 0;
+            transform: scale(0, 0);
+            font-size: 60px;
+          }
+
+          27% {
+            transform: scale(1.5, 1.5);
+          }
+
+          30% {
+            width: 70px;
+            opacity: 1;
+            transform: scale(1, 1);
+          }
+
+          50% {
+            transform: scale(1, 1);
+            font-size: 60px;
+          }
+
+          53% {
+            transform: scale(1.5, 1.5);
+            font-size: 80px;
+          }
+
+          55% {
+            width: 70px;
+            opacity: 1;
+            transform: scale(1, 1);
+          }
+
+          75% {
+            width: 50px;
+            transform: scale(1, 1);
+          }
+
+          77% {
+            transform: scale(1.5, 1.5);
+          }
+
+          80% {
+            transform: scale(1, 1);
+            font-size: 70px;
+          }
+
+          100% {
+            width: 100px;
+            opacity: 1;
+            transform: scale(1, 1);
+            font-size: 80px;
+          }
+        }
+
+        @keyframes you-text {
+          0% {
+            width: 90px;
+            opacity: 1;
+            transform: scale(1, 1);
+          }
+
+          25% {
+            width: 80px;
+            opacity: 1;
+          }
+
+          26% {
+            width: 90px;
+            opacity: 1;
+          }
+
+          50% {
+            width: 80px;
+            opacity: 1;
+            transform: scale(1, 1);
+          }
+
+          53%,
+          100% {
+            width: 0;
+            opacity: 0;
+            transform: scale(0, 0);
+          }
+        }
+
+        @keyframes you-text-small {
+
+          0%,
+          50% {
+            width: 0;
+            opacity: 0;
+            transform: scale(0, 0);
+          }
+
+          53% {
+            width: 80px;
+            opacity: 1;
+          }
+
+          55% {
+            transform: scale(1, 1);
+          }
+
+          75% {
+            width: 50px;
+            opacity: 1;
+          }
+
+          76%,
+          100% {
+            width: 0;
+            opacity: 0;
+          }
+        }
+
+        @keyframes letter-i {
+
+          0%,
+          75% {
+            opacity: 1;
+            display: flex;
+            transform: scale(1, 1);
+          }
+
+          77%,
+          100% {
+            width: 0;
+            opacity: 0;
+            transform: scale(1, 1);
+          }
+        }
+    </style>
+
 </head>
- 
+
 <body>
-  <!-- partial:index.partial.html -->
-  <div class="container">
+<!-- partial:index.partial.html -->
+<div class="container">
     <!--   <div class="splash">
       <div class="circle-out">
         <div class="circle-in"></div>
       </div>
     </div> -->
     <div class="animation-container">
- 
-      <div class="letter-i letter"><span>I</span></div>
-      <div class="letter-love letter">
-        <div class="love-text love"><span>Love</span></div>
-        <div class="love-heart love"><i class="fa fa-heart"></i></div>
-      </div>
-      <div class="letter-you letter">
-        <div class="you-text"><span>You</span></div>
-        <div class="you-text-small"><span>U</span></div>
- 
-      </div>
+
+        <div class="letter-i letter"><span>I</span></div>
+        <div class="letter-love letter">
+            <div class="love-text love"><span>Love</span></div>
+            <div class="love-heart love"><i class="fa fa-heart"></i></div>
+        </div>
+        <div class="letter-you letter">
+            <div class="you-text"><span>You</span></div>
+            <div class="you-text-small"><span>U</span></div>
+
+        </div>
     </div>
-  </div>
-  <div class="box">
+</div>
+<div class="box">
     <canvas id="pinkboard"></canvas>
-  </div>
-  <!-- partial -->
-  <script>
+</div>
+<!-- partial -->
+<script>
     var settings = {
       particles: {
         length: 2000, // maximum amount of particles
@@ -639,8 +639,8 @@
         render();
       }, 10);
     })(document.getElementById('pinkboard'));
-  </script>
- 
+</script>
+
 </body>
- 
+
 </html>
